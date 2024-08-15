@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "EFuZisTw2mVq5sFTUKS58QY/UY0Zm36H2ot4kiwc0GMdZGQaXhQdFNSRWVXRxW8L/3BeDLdCxQaFfJAKErzQbw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sistanAlaptop\\Desktop\\mainProject\\ImagesProcessing\\DataLayer\\DataLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sistanAlaptop\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

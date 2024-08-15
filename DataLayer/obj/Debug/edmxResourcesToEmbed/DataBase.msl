@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ImagesProcessing_DBModelStoreContainer" CdmEntityContainer="ImagesProcessing_DBEntities">
+    <EntitySetMapping Name="Images_DT">
+      <EntityTypeMapping TypeName="ImagesProcessing_DBModel.Images_DT">
+        <MappingFragment StoreEntitySet="Images_DT">
+          <ScalarProperty Name="ImageID" ColumnName="ImageID" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Login_DT">
+      <EntityTypeMapping TypeName="ImagesProcessing_DBModel.Login_DT">
+        <MappingFragment StoreEntitySet="Login_DT">
+          <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

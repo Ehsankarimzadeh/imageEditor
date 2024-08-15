@@ -1,0 +1,54 @@
+﻿<Window x:Class="ImagesProcessing.Signup.SignupPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImagesProcessing.Signup"
+        mc:Ignorable="d"
+        Title="Signup Page" FontFamily="Forte" FontSize="20" Background="DarkOrange" Height="600" Width="700">
+    <Grid Margin="20" Background="Black">
+        <StackPanel Margin="10">
+            <DockPanel Margin="10">
+                <Label Margin="10" Foreground="White">Full Name :</Label>
+                <TextBox x:Name="tbFullName" Margin="10" Width="350" HorizontalAlignment="Right"></TextBox>
+            </DockPanel>
+
+            <DockPanel Margin="10">
+                <Label Margin="10" Foreground="White">Email :</Label>
+                <TextBox x:Name="tbEmail" Margin="10" Width="350" HorizontalAlignment="Right"></TextBox>
+            </DockPanel>
+
+            <DockPanel Margin="10">
+                <Label Margin="10" Foreground="White">User Name :</Label>
+                <TextBox x:Name="tbUsername" Margin="10" Width="350" HorizontalAlignment="Right"></TextBox>
+            </DockPanel>
+
+            <DockPanel Margin="10">
+                <Label Margin="10" Foreground="White">Password :</Label>
+                <DockPanel HorizontalAlignment="Right">
+                    <PasswordBox x:Name="pbPassword" Width="290" Margin="10"></PasswordBox>
+                    <TextBox x:Name="tbPassword" Margin="10" Width="290" HorizontalAlignment="Right" Visibility="Collapsed"></TextBox>
+                    <Button x:Name="hiddenBtn" Margin="10" Width="40" Height="40" HorizontalAlignment="Right" Click="hiddenBtn_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/Resources/eye.png"/>
+                        </Button.Background>
+                    </Button>
+                </DockPanel>
+            </DockPanel>
+
+            <DockPanel Margin="10">
+                <Label Margin="10" Foreground="White">Repeat The Password :</Label>
+                <DockPanel HorizontalAlignment="Right">
+                    <PasswordBox x:Name="pbRepeatPassword" Width="350" Margin="10" HorizontalAlignment="Right" Visibility="Visible"></PasswordBox>
+                    <TextBox x:Name="tbRepeatPassword" Margin="10" Width="350" HorizontalAlignment="Right" Visibility="Collapsed"></TextBox>
+                </DockPanel>
+            </DockPanel>
+
+            <DockPanel Margin="10">
+                <Label x:Name="loginLabel" Foreground="DarkBlue"  FontSize="30" HorizontalAlignment="Left" Margin="10" MouseLeftButtonDown="loginLabel_MouseLeftButtonDown">Login</Label>
+                <Button x:Name="signupBtn" Margin="10" Width="110" FontSize="30" HorizontalAlignment="Right" Background="Green" Foreground="White" Click="signupBtn_Click">Signup</Button>
+            </DockPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="ImagesProcessing.Crop.cropPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImagesProcessing.Crop"
+        mc:Ignorable="d"
+        Title="Crop Page" FontSize="20" Background="Orange" Height="450" Width="600">
+    <Grid Background="black" Margin="20">
+        <Image x:Name="imageBox" HorizontalAlignment="Left" Height="312" Margin="33,25,0,0" VerticalAlignment="Top" Width="365" Stretch="Fill" MouseDown="mouseDown" MouseMove="mouseMove" MouseUp="mouseUp"/>
+        <Button x:Name="cropBtn" Content="Crop" HorizontalAlignment="Left" Margin="445,133,0,0" VerticalAlignment="Top" Height="52" Width="82" Background="Blue" Foreground="White" Click="cropBtn_Click"/>
+        <Button x:Name="cancelBtn" Content="Cancel" HorizontalAlignment="Left" Margin="445,210,0,0" VerticalAlignment="Top" Width="82" Height="52" Background="Red" Foreground="White" Click="cancelBtn_Click"/>
+        <Button x:Name="saveBtn" Content="Save" HorizontalAlignment="Left" Margin="445,279,0,0" VerticalAlignment="Top" Width="82" Height="52" Background="Green" Foreground="White" Click="saveBtn_Click"/>
+
+    </Grid>
+</Window>
